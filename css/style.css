@@ -1,0 +1,58 @@
+
+/*COMENTARIOS CSS*/
+/*selector { propiedad: valor;}*/
+
+/* BG */
+
+body {
+    /* background-image: url(/img/bg.jpg); REVISAR IMAGEN */
+    background-color: #F9E8F0;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: #821148 ;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    color: #000407;
+    text-align: center;
+    font-size: 20px;
+}
+
+p {
+    color: #3F4E87;             
+    text-align: center;
+    font-size: 20px;
+}
+    
+ul li {
+    color: #821148;
+    display: inline;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.content {
+    border: 1px #821148 solid;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}   
+
+.boxReturn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.boxReturn a {
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px #000407 solid;
+    border-radius: 100px;
+    background-color: #000407;
+}
