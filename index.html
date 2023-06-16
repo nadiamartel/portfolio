@@ -1,54 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Profesional</title>
-
-    <!-- CSS -->
-<link rel="stylesheet" href="css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="img/logong.JPG" type="image/x-icon">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>NM Web Developer</title>
 </head>
 
 <body>
-    
-    <!-- Wrapper -->
-    <div id="wrapper"></div>
-
-    <!-- Header -->
-    <header id="header">
-        <div class="logo">
-            <span class="iconOne"></span>
-        </div>
+    <!-- HOME SECTION     -->
+    <section id="home">
         <div class="content">
-            <div class="inside">
-                <h1>Nadia Martel</h1>
-                <p>Portfolio Profesional</p>
+            <header>
+                <div class="content_header">
+                    <h1>/NM/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#home" class="select">HOME</a></li>
+                            <li><a href="#aboutme">ABOUT ME</a></li>
+                            <li><a href="#portfolio">PORTFOLIO</a></li>
+                            <li><a href="#contact">CONTACT ME</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- RESPONSIVE MENU ICONS -->
+                    <div id="icon_nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- SOCIAL MEDIA ICONS -->
+                    <div class="networks">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentation">
+                <p class="welcome">Welcome!</p>
+                <h2>I'am <span>Nadia Martel</span>, Web Developer</h2>
+                <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit perferendis
+                    explicabo eaque soluta dignissimos harum. Earum in explicabo sed excepturi.</p>
+                <a href="#tools">Go to PORTFOLIO </a>
             </div>
         </div>
-        
-        <nav>
-            <ul>
-                <li><a href="intro.html">Intro</a></li>
-                <li><a href="experiencia.html">Experiencia</a></li>
-                <li><a href="formacion.html">Formacion</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        
-    </header>
+    </section>
 
-    <footer id="footer">
-        <div class="center">
-            <h2>Sitio creado por NM</h2>
-            <p>Derechos reservados por el autor</p>
+    <!-- ABOUT ME SECTION -->
+    <section id="aboutme">
+        <div class="container_pic">
+            <img src="/img/pic.png.jpg" alt="picture_personal">
         </div>
-    </footer>
-    
+        <div class="aboutme">
+            <p class="title_section">About Me</p>
+            <h2>Hi! I'am <span>Nadia Martel</span></h2>
+            <h3>Web Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, animi quae.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">Download CV</a>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION ---esto se ve solo al hacer scroll!!  -->
+    <div class="container_skills" id="skills">
+        <h3>Skills</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="list"></span>Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra_progress1"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="list"></span>JavaScript</p>
+                <span class="porcentaje">88%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra_progress2"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="list"></span>React</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="react" class="barra_progress3"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="list"></span>Redux</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="redux" class="barrra_progress4"></div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>

@@ -1,58 +1,308 @@
+/* ADD THE SOURCE */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
 
-/*COMENTARIOS CSS*/
-/*selector { propiedad: valor;}*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
 
-/* BG */
+html{
+    scroll-behavior: smooth;
+}
 
-body {
-    /* background-image: url(/img/bg.jpg); REVISAR IMAGEN */
-    background-color: #F9E8F0;
+#home{
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/img/bg.png");
     background-size: cover;
-    font-family: 'Roboto', sans-serif;
+    background-position: center center;
+    height: 100vh;
 }
 
-h1 {
-    color: #821148 ;
-    text-align: center;
-    font-size: 40px;
-}
-
-h2 {
-    color: #000407;
-    text-align: center;
-    font-size: 20px;
-}
-
-p {
-    color: #3F4E87;             
-    text-align: center;
-    font-size: 20px;
-}
-    
-ul li {
-    color: #821148;
-    display: inline;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-.content {
-    border: 1px #821148 solid;
-    padding: 10px;
-    margin: 20px;
-    border-radius: 5px;
-}   
-
-.boxReturn {
+#home .content header{
+    background-color: rgba(0, 0, 0, .8);
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    width: 100%;
+    z-index: 100;
+    top: 0;
 }
 
-.boxReturn a {
-    color: #ffffff;
+#home .content header .content_header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#home .content header .content_header h1{
+    text-align: center;
+    color: #E7196A;
+}
+
+#home .content header .content_header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#home .content header .content_header nav ul li a{
     text-decoration: none;
-    border: 1px #000407 solid;
-    border-radius: 100px;
-    background-color: #000407;
+    color: #FDFEFE;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#home .content header .content_header nav ul a:hover{
+    color: #E7196A;
+}
+
+#home .content header .content_header .networks a{
+    text-decoration: none;
+    color:#FDFEFE;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#home .content header .content_header .networks a:hover{
+    color: #E7196A;
+}
+
+#home .content .presentation{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #FDFEFE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home .content .presentation .welcome{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#home .content .presentation h2{
+    font-size: 57px;
+    margin-bottom: 27px;
+    align-items: center;
+}
+
+#home .content .presentation h2 span{
+    font-size: 27px;
+    color: #E7196A;
+}
+
+#home .content .presentation .description{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 19px;
+    text-align: center;
+}
+
+#home .content .presentation a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #FDFEFE;
+    border-radius: 50px;
+    color:#FDFEFE;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#home .content .presentation a:hover{
+    background-color: #E7196A;
+}
+
+#icon_nav{
+    color:#FDFEFE;
+    display: none;
+}
+
+/* SECTION ABOUT ME */
+#aboutme{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #17202A;
+    display: flex;
+}
+
+#aboutme .container_pic{
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#aboutme .container_pic img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #EBEDEF;
+}
+
+#aboutme .aboutme{
+    margin: 0 40px;
+}
+
+#aboutme .aboutme .title_section{
+    font-size: 23px;
+    text-transform: uppercase;
+    color: #17202A;
+    text-decoration: underline;
+    text-decoration-color: #EBEDEF;
+    text-decoration-thickness: 5px;
+}
+
+#aboutme .aboutme h2{
+    font-size: 37px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#aboutme .aboutme h2 span{
+    color: #E7196A;
+}
+
+#aboutme .aboutme h3{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#aboutme .aboutme p{
+    font-size: 15px;
+    line-height: 27px;
+    color: #34495E;
+    margin-bottom: 13px;
+}
+
+#aboutme .aboutme a{
+    display: inline-block;
+    text-decoration: none;
+    color: #17202A;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #17202A;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#aboutme .aboutme a:hover{
+    background-color: #E7196A;
+    color: #FDFEFE;
+}
+
+/* SECTION SKILLS */
+.container_skills{
+    background: linear-gradient(#E7196A, rgba(33,16,16.8)), url("/img/skills.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.container_skills .skill{
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.container_skills .skill .info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_skills .skill .list{
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #FDFEFE;
+}
+
+.container_skills .skill .barra{
+    background-color: #EBEDEF;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+
+/* LAS ANIMACIONES FUNCIONAN CON JAVASCRIP */
+.container_skills .skill .barra_progress1{
+    background-color: #EBEDEF;
+    width: 95%;
+    height: 6px;
+    animation: progress1 2s forwards;
+}
+
+.container_skills .skill .barra_progress2{
+    background-color: #EBEDEF;
+    width: 88%;
+    height: 6px;
+    animation: progress2 2s forwards;
+}
+
+.container_skills .skill .barra_progress3{
+    background-color: #EBEDEF;
+    width: 90%;
+    height: 6px;
+    animation: progress3 2s forwards;
+}
+
+.container_skills .skill .barra_progress4{
+    background-color: #EBEDEF;
+    width: 90%;
+    height: 6px;
+    animation: progress4 2s forwards;
+}
+
+/* ANIMACIONES */
+@keyframes progress1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+@keyframes progress2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 88%;
+    }
+}
+
+@keyframes progress3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes progress4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
 }
